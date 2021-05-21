@@ -34,10 +34,10 @@ complex scale_c(double scalar, complex num){
 // function prints complex number
 void print_c(complex num){
 	if (num.imag >= 0){
-		printf("%.4f + j%.4f", num.real, num.imag);
+		printf("%.4f + j%.4f", num.real, fabs(num.imag));
 	}
 	else {
-		printf("%.4f - j%.4f", num.real, abs(num.imag));
+		printf("%.4f - j%.4f", num.real, fabs(num.imag));
 	}
 }
 
